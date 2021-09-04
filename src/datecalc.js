@@ -1,12 +1,14 @@
-import {
-    DateTime
-} from "./luxon.js";
+// import {
+//     DateTime
+// } from "./luxon.js";
 
 export const formatError = text => `
 <span style="color: red;">
     ${text}
 </span>
 `;
+
+let DateTime = luxon.DateTime;
 
 export function diffDates(firstDate, secondDate) {
     firstDate = DateTime.fromISO(firstDate);

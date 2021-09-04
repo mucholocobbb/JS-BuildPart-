@@ -1,3 +1,6 @@
+// import {
+//     loadScript
+// } from "./loadScript.js"
 import {
     handleCalcDates,
     dateCalcForm
@@ -11,6 +14,9 @@ import {
     start,
     stop
 } from "./timer.js";
+
+// loadScript("https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js")
+
 
 export const checkBtns = document.querySelector('.buttons')
 export const calcDataBlock = document.querySelector('.calcDateBlock')

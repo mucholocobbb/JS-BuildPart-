@@ -4,15 +4,24 @@ export const stop = document.getElementById('stop');
 
 
 let interval
+let isPlay = false
 
 export function timerInit() {
-    interval = setInterval(function timer() {
-        if (inp.value > 0) {
-            inp.value--
-        }
-    }, 1000)
+    if (!isPlay) {
+        isPlay = true
+        interval = setInterval(function timer() {
+            if (inp.value > 0) {
+                inp.value--
+            } else if (inp.value == 0) {
+                isPlay = false
+                clearInterval(interval);
+            }
+        }, 1000)
+
+    }
 }
 
 export function stopTimer() {
+    isPlay = false
     clearInterval(interval);
 }
