@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiTool</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="src/main.js"></script>
+
+</head>
+
+<body>
+
+    <div class="multiTool">
+        <div class="mainTempl">
+            <div class="calcDateBlock">
+                <form id="datecalc">
+                    <h3>Калькулятор дат</h3>
+                    <label for="dateFrom">
+                        <span>Первая дата:</span>
+                        <input id="dateFrom" type="date" name="firstDate" />
+                    </label>
+                    <label for="dateTo">
+                        <span>Вторая дата:</span>
+                        <input id="dateTo" type="date" name="secondDate" />
+                    </label>
+                    <button type="submit">Расчитать промежуток</button>
+                    <p id="datecalc__result"></p>
+                </form>
+            </div>
+            <div class="timerBlock blockHidden">
+                <input class="timerInput" id="timer" type="number">
+                <span>sec</span>
+                <div class="timerBtn ">
+                    <button id="start" class="btnStyle">Start</button>
+                    <button id="stop" class="btnStyle">Stop</button>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btnStyle calcDate btnActive">CalcDate</button>
+            <button class="btnStyle timer">Timer</button>
+        </div>
+    </div>
+</body>
+
+</html>
