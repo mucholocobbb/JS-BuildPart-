@@ -1,7 +1,4 @@
 import {
-    loadScript
-} from "./loadScript.js"
-import {
     handleCalcDates,
     dateCalcForm
 } from "./dcMain.js";
@@ -14,8 +11,6 @@ import {
     start,
     stop
 } from "./timer.js";
-
-// loadScript('https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js')
 
 export const sound = new Howl({
     src: ['media/sound.mp3']
