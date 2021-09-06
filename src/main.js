@@ -1,6 +1,6 @@
-// import {
-//     loadScript
-// } from "./loadScript.js"
+import {
+    loadScript
+} from "./loadScript.js"
 import {
     handleCalcDates,
     dateCalcForm
@@ -15,9 +15,11 @@ import {
     stop
 } from "./timer.js";
 
-// loadScript("https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js")
+// loadScript('https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js')
 
-
+export const sound = new Howl({
+    src: ['media/sound.mp3']
+});
 export const checkBtns = document.querySelector('.buttons')
 export const calcDataBlock = document.querySelector('.calcDateBlock')
 export const timerBlock = document.querySelector('.timerBlock')

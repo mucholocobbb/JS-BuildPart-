@@ -1,3 +1,7 @@
+import {
+    sound
+} from "./main.js"
+
 const inp = document.getElementById('timer');
 export const start = document.getElementById('start');
 export const stop = document.getElementById('stop');
@@ -13,7 +17,8 @@ export function timerInit() {
             if (inp.value > 0) {
                 inp.value--
             } else if (inp.value == 0) {
-                isPlay = false
+                sound.play();
+                isPlay = false;
                 clearInterval(interval);
             }
         }, 1000)

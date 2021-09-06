@@ -1,15 +1,12 @@
-// import {
-//     DateTime
-// } from "./luxon.js";
+import {
+    DateTime
+} from "./luxon.js";
 
 export const formatError = text => `
 <span style="color: red;">
     ${text}
 </span>
 `;
-
-let DateTime = luxon.DateTime;
-
 export function diffDates(firstDate, secondDate) {
     firstDate = DateTime.fromISO(firstDate);
     secondDate = DateTime.fromISO(secondDate);
@@ -28,7 +25,3 @@ export const diffToHtml = diff => `
         ${diff.days ? 'Дней: ' + diff.days : ''}
     </span>
 `;
-
-// const now = DateTime.now()
-
-// console.log(now.second)
