@@ -12,13 +12,11 @@ export function loadScript(url, atr) {
         element.setAttribute("crossorigin", "anonymous");
         element.setAttribute("referrerpolicy", "no-referrer");
         test.replaceWith(element);
-        console.log(element);
     } else if (atr === 2) {
         let test = document.querySelector('.test2')
         element.setAttribute("defer", "");
         element.src = url;
         test.replaceWith(element);
-        console.log(element);
     }
 
 }
