@@ -1,6 +1,8 @@
 import {
     getTemlate
-} from "./templGen.js"
+} from "./templGen.js";
+import "../media/sound.mp3";
+import "../css/style.sass";
 
 
 export function loadScript(url, atr) {
