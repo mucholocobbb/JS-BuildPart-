@@ -1,0 +1,11 @@
+{
+    "plugins":[["@babel/plugin-proposal-decorators", {"decoratorsBeforeExport" : true}]]
+}
+// @isTestable(true)
+// class myClass {}
+
+// function isTestable(value) {
+//     return function decorator(target) {
+//         target.isTestable = value
+//     }
+// } этот код копируем в тот js  файл ,который должен работать в старых браузерах

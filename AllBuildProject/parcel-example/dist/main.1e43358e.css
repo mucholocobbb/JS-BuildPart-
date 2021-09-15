@@ -1,0 +1,39 @@
+.multiTool {
+  width: 60%;
+  min-height: 250px;
+  border: 1px solid #000;
+  margin: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btnStyle {
+  width: 100px;
+  height: 30px;
+  background-color: #fff;
+  outline: none;
+}
+
+.btnActive {
+  background-color: #a7a7a7;
+}
+
+.blockHidden {
+  display: none;
+}
+
+.timerInput {
+  width: 200px;
+  height: 30px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.timerBlock {
+  margin: 32px;
+}
+
+/*# sourceMappingURL=/main.1e43358e.css.map */

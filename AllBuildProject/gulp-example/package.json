@@ -1,0 +1,24 @@
+{
+  "name": "gulpexample",
+  "version": "1.0.0",
+  "description": " Пробный проект по изучению сборщиков проектов. В нашем случае пробуем Task Runner - Gulp",
+  "main": "main.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mucholocobbb/JS-BuildPart-.git"
+  },
+  "author": "muchoLocoBBB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mucholocobbb/JS-BuildPart-/issues"
+  },
+  "homepage": "https://github.com/mucholocobbb/JS-BuildPart-#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.39.0"
+  }
+}

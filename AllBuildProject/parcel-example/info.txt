@@ -1,0 +1,5 @@
+npx serve dist - запуск сборки из папки  dist
+npx parcel build main.html - запуск сборки с точкой входа main.html
+npm run prodaction - запуск скрипта prodaction из package.json
+
+
